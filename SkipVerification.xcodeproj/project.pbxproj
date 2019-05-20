@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		48E3ED5222929A25007127E0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED5122929A25007127E0 /* AppDelegate.m */; };
+		48E3ED5522929A25007127E0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED5422929A25007127E0 /* ViewController.m */; };
+		48E3ED5722929A2F007127E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E3ED5622929A2F007127E0 /* Assets.xcassets */; };
+		48E3ED5A22929A2F007127E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E3ED5822929A2F007127E0 /* Main.storyboard */; };
+		48E3ED5D22929A2F007127E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED5C22929A2F007127E0 /* main.m */; };
+		48E3ED6822929A30007127E0 /* SkipVerificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED6722929A30007127E0 /* SkipVerificationTests.m */; };
+		48E3ED7322929A30007127E0 /* SkipVerificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED7222929A30007127E0 /* SkipVerificationUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		48E3ED6422929A30007127E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E3ED4522929A24007127E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48E3ED4C22929A24007127E0;
+			remoteInfo = SkipVerification;
+		};
+		48E3ED6F22929A30007127E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 48E3ED4522929A24007127E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48E3ED4C22929A24007127E0;
+			remoteInfo = SkipVerification;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		48E3ED4D22929A25007127E0 /* SkipVerification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkipVerification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E3ED5022929A25007127E0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		48E3ED5122929A25007127E0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		48E3ED5322929A25007127E0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		48E3ED5422929A25007127E0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		48E3ED5622929A2F007127E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48E3ED5922929A2F007127E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		48E3ED5B22929A2F007127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E3ED5C22929A2F007127E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		48E3ED5E22929A2F007127E0 /* SkipVerification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkipVerification.entitlements; sourceTree = "<group>"; };
+		48E3ED6322929A30007127E0 /* SkipVerificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkipVerificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E3ED6722929A30007127E0 /* SkipVerificationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkipVerificationTests.m; sourceTree = "<group>"; };
+		48E3ED6922929A30007127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E3ED6E22929A30007127E0 /* SkipVerificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkipVerificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		48E3ED7222929A30007127E0 /* SkipVerificationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkipVerificationUITests.m; sourceTree = "<group>"; };
+		48E3ED7422929A30007127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48E3ED4A22929A24007127E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E3ED6022929A30007127E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E3ED6B22929A30007127E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48E3ED4422929A24007127E0 = {
+			isa = PBXGroup;
+			children = (
+				48E3ED4F22929A25007127E0 /* SkipVerification */,
+				48E3ED6622929A30007127E0 /* SkipVerificationTests */,
+				48E3ED7122929A30007127E0 /* SkipVerificationUITests */,
+				48E3ED4E22929A25007127E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48E3ED4E22929A25007127E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48E3ED4D22929A25007127E0 /* SkipVerification.app */,
+				48E3ED6322929A30007127E0 /* SkipVerificationTests.xctest */,
+				48E3ED6E22929A30007127E0 /* SkipVerificationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48E3ED4F22929A25007127E0 /* SkipVerification */ = {
+			isa = PBXGroup;
+			children = (
+				48E3ED5022929A25007127E0 /* AppDelegate.h */,
+				48E3ED5122929A25007127E0 /* AppDelegate.m */,
+				48E3ED5322929A25007127E0 /* ViewController.h */,
+				48E3ED5422929A25007127E0 /* ViewController.m */,
+				48E3ED5622929A2F007127E0 /* Assets.xcassets */,
+				48E3ED5822929A2F007127E0 /* Main.storyboard */,
+				48E3ED5B22929A2F007127E0 /* Info.plist */,
+				48E3ED5C22929A2F007127E0 /* main.m */,
+				48E3ED5E22929A2F007127E0 /* SkipVerification.entitlements */,
+			);
+			path = SkipVerification;
+			sourceTree = "<group>";
+		};
+		48E3ED6622929A30007127E0 /* SkipVerificationTests */ = {
+			isa = PBXGroup;
+			children = (
+				48E3ED6722929A30007127E0 /* SkipVerificationTests.m */,
+				48E3ED6922929A30007127E0 /* Info.plist */,
+			);
+			path = SkipVerificationTests;
+			sourceTree = "<group>";
+		};
+		48E3ED7122929A30007127E0 /* SkipVerificationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				48E3ED7222929A30007127E0 /* SkipVerificationUITests.m */,
+				48E3ED7422929A30007127E0 /* Info.plist */,
+			);
+			path = SkipVerificationUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48E3ED4C22929A24007127E0 /* SkipVerification */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E3ED7722929A30007127E0 /* Build configuration list for PBXNativeTarget "SkipVerification" */;
+			buildPhases = (
+				48E3ED4922929A24007127E0 /* Sources */,
+				48E3ED4A22929A24007127E0 /* Frameworks */,
+				48E3ED4B22929A24007127E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkipVerification;
+			productName = SkipVerification;
+			productReference = 48E3ED4D22929A25007127E0 /* SkipVerification.app */;
+			productType = "com.apple.product-type.application";
+		};
+		48E3ED6222929A30007127E0 /* SkipVerificationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E3ED7A22929A30007127E0 /* Build configuration list for PBXNativeTarget "SkipVerificationTests" */;
+			buildPhases = (
+				48E3ED5F22929A30007127E0 /* Sources */,
+				48E3ED6022929A30007127E0 /* Frameworks */,
+				48E3ED6122929A30007127E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E3ED6522929A30007127E0 /* PBXTargetDependency */,
+			);
+			name = SkipVerificationTests;
+			productName = SkipVerificationTests;
+			productReference = 48E3ED6322929A30007127E0 /* SkipVerificationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		48E3ED6D22929A30007127E0 /* SkipVerificationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48E3ED7D22929A30007127E0 /* Build configuration list for PBXNativeTarget "SkipVerificationUITests" */;
+			buildPhases = (
+				48E3ED6A22929A30007127E0 /* Sources */,
+				48E3ED6B22929A30007127E0 /* Frameworks */,
+				48E3ED6C22929A30007127E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				48E3ED7022929A30007127E0 /* PBXTargetDependency */,
+			);
+			name = SkipVerificationUITests;
+			productName = SkipVerificationUITests;
+			productReference = 48E3ED6E22929A30007127E0 /* SkipVerificationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48E3ED4522929A24007127E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Switt kongdachalert";
+				TargetAttributes = {
+					48E3ED4C22929A24007127E0 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					48E3ED6222929A30007127E0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 48E3ED4C22929A24007127E0;
+					};
+					48E3ED6D22929A30007127E0 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 48E3ED4C22929A24007127E0;
+					};
+				};
+			};
+			buildConfigurationList = 48E3ED4822929A24007127E0 /* Build configuration list for PBXProject "SkipVerification" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48E3ED4422929A24007127E0;
+			productRefGroup = 48E3ED4E22929A25007127E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48E3ED4C22929A24007127E0 /* SkipVerification */,
+				48E3ED6222929A30007127E0 /* SkipVerificationTests */,
+				48E3ED6D22929A30007127E0 /* SkipVerificationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48E3ED4B22929A24007127E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E3ED5722929A2F007127E0 /* Assets.xcassets in Resources */,
+				48E3ED5A22929A2F007127E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E3ED6122929A30007127E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E3ED6C22929A30007127E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48E3ED4922929A24007127E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E3ED5522929A25007127E0 /* ViewController.m in Sources */,
+				48E3ED5D22929A2F007127E0 /* main.m in Sources */,
+				48E3ED5222929A25007127E0 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E3ED5F22929A30007127E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E3ED6822929A30007127E0 /* SkipVerificationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48E3ED6A22929A30007127E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48E3ED7322929A30007127E0 /* SkipVerificationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		48E3ED6522929A30007127E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48E3ED4C22929A24007127E0 /* SkipVerification */;
+			targetProxy = 48E3ED6422929A30007127E0 /* PBXContainerItemProxy */;
+		};
+		48E3ED7022929A30007127E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48E3ED4C22929A24007127E0 /* SkipVerification */;
+			targetProxy = 48E3ED6F22929A30007127E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		48E3ED5822929A2F007127E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				48E3ED5922929A2F007127E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		48E3ED7522929A30007127E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		48E3ED7622929A30007127E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		48E3ED7822929A30007127E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SkipVerification/SkipVerification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WX9732WYH7;
+				INFOPLIST_FILE = SkipVerification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Swoft.SkipVerification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		48E3ED7922929A30007127E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SkipVerification/SkipVerification.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WX9732WYH7;
+				INFOPLIST_FILE = SkipVerification/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Swoft.SkipVerification;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		48E3ED7B22929A30007127E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WX9732WYH7;
+				INFOPLIST_FILE = SkipVerificationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Swoft.SkipVerificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkipVerification.app/Contents/MacOS/SkipVerification";
+			};
+			name = Debug;
+		};
+		48E3ED7C22929A30007127E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WX9732WYH7;
+				INFOPLIST_FILE = SkipVerificationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Swoft.SkipVerificationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SkipVerification.app/Contents/MacOS/SkipVerification";
+			};
+			name = Release;
+		};
+		48E3ED7E22929A30007127E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WX9732WYH7;
+				INFOPLIST_FILE = SkipVerificationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Swoft.SkipVerificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SkipVerification;
+			};
+			name = Debug;
+		};
+		48E3ED7F22929A30007127E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = WX9732WYH7;
+				INFOPLIST_FILE = SkipVerificationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Swoft.SkipVerificationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SkipVerification;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48E3ED4822929A24007127E0 /* Build configuration list for PBXProject "SkipVerification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E3ED7522929A30007127E0 /* Debug */,
+				48E3ED7622929A30007127E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E3ED7722929A30007127E0 /* Build configuration list for PBXNativeTarget "SkipVerification" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E3ED7822929A30007127E0 /* Debug */,
+				48E3ED7922929A30007127E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E3ED7A22929A30007127E0 /* Build configuration list for PBXNativeTarget "SkipVerificationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E3ED7B22929A30007127E0 /* Debug */,
+				48E3ED7C22929A30007127E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48E3ED7D22929A30007127E0 /* Build configuration list for PBXNativeTarget "SkipVerificationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48E3ED7E22929A30007127E0 /* Debug */,
+				48E3ED7F22929A30007127E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48E3ED4522929A24007127E0 /* Project object */;
+}
