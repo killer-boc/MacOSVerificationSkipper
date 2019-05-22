@@ -16,6 +16,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    _window = [[[NSApplication sharedApplication] windows] firstObject];
 }
 
 
@@ -23,5 +24,16 @@
     // Insert code here to tear down your application
 }
 
+- (BOOL)applicationShouldHandleReopen:(NSApplication *)theApplication hasVisibleWindows:(BOOL)flag
+{
+    if (flag) {
+        return NO;
+    }
+    else
+    {
+        [self.window makeKeyAndOrderFront:self];// Window that you want open while click on dock app icon
+        return YES;
+    }
+}
 
 @end

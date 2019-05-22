@@ -14,6 +14,8 @@
 		48E3ED5D22929A2F007127E0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED5C22929A2F007127E0 /* main.m */; };
 		48E3ED6822929A30007127E0 /* SkipVerificationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED6722929A30007127E0 /* SkipVerificationTests.m */; };
 		48E3ED7322929A30007127E0 /* SkipVerificationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED7222929A30007127E0 /* SkipVerificationUITests.m */; };
+		48E3ED8222929F21007127E0 /* DragTargetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED8122929F21007127E0 /* DragTargetView.m */; };
+		48E3ED852292AFFA007127E0 /* NSBezierPath+BezierPathQuartzUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E3ED842292AFFA007127E0 /* NSBezierPath+BezierPathQuartzUtilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,13 +45,16 @@
 		48E3ED5922929A2F007127E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		48E3ED5B22929A2F007127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E3ED5C22929A2F007127E0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		48E3ED5E22929A2F007127E0 /* SkipVerification.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SkipVerification.entitlements; sourceTree = "<group>"; };
 		48E3ED6322929A30007127E0 /* SkipVerificationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkipVerificationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E3ED6722929A30007127E0 /* SkipVerificationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkipVerificationTests.m; sourceTree = "<group>"; };
 		48E3ED6922929A30007127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48E3ED6E22929A30007127E0 /* SkipVerificationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkipVerificationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E3ED7222929A30007127E0 /* SkipVerificationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SkipVerificationUITests.m; sourceTree = "<group>"; };
 		48E3ED7422929A30007127E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E3ED8022929F21007127E0 /* DragTargetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragTargetView.h; sourceTree = "<group>"; };
+		48E3ED8122929F21007127E0 /* DragTargetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragTargetView.m; sourceTree = "<group>"; };
+		48E3ED832292AFF2007127E0 /* NSBezierPath-BezierPathQuartzUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBezierPath-BezierPathQuartzUtilities.h"; sourceTree = "<group>"; };
+		48E3ED842292AFFA007127E0 /* NSBezierPath+BezierPathQuartzUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBezierPath+BezierPathQuartzUtilities.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +109,14 @@
 				48E3ED5122929A25007127E0 /* AppDelegate.m */,
 				48E3ED5322929A25007127E0 /* ViewController.h */,
 				48E3ED5422929A25007127E0 /* ViewController.m */,
+				48E3ED832292AFF2007127E0 /* NSBezierPath-BezierPathQuartzUtilities.h */,
+				48E3ED842292AFFA007127E0 /* NSBezierPath+BezierPathQuartzUtilities.m */,
+				48E3ED8022929F21007127E0 /* DragTargetView.h */,
+				48E3ED8122929F21007127E0 /* DragTargetView.m */,
 				48E3ED5622929A2F007127E0 /* Assets.xcassets */,
 				48E3ED5822929A2F007127E0 /* Main.storyboard */,
 				48E3ED5B22929A2F007127E0 /* Info.plist */,
 				48E3ED5C22929A2F007127E0 /* main.m */,
-				48E3ED5E22929A2F007127E0 /* SkipVerification.entitlements */,
 			);
 			path = SkipVerification;
 			sourceTree = "<group>";
@@ -198,6 +206,11 @@
 				TargetAttributes = {
 					48E3ED4C22929A24007127E0 = {
 						CreatedOnToolsVersion = 10.2.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 					48E3ED6222929A30007127E0 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -260,9 +273,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E3ED852292AFFA007127E0 /* NSBezierPath+BezierPathQuartzUtilities.m in Sources */,
 				48E3ED5522929A25007127E0 /* ViewController.m in Sources */,
 				48E3ED5D22929A2F007127E0 /* main.m in Sources */,
 				48E3ED5222929A25007127E0 /* AppDelegate.m in Sources */,
+				48E3ED8222929F21007127E0 /* DragTargetView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,7 +439,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SkipVerification/SkipVerification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WX9732WYH7;
@@ -442,7 +456,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = SkipVerification/SkipVerification.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = WX9732WYH7;

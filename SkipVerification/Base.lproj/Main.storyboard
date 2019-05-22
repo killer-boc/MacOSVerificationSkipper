@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11134" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11134"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14490.70"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -673,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider=""/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,11 +684,13 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="App Verification Skipper" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="300" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="320" height="270"/>
+                        <value key="maxSize" type="size" width="320" height="270"/>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -697,16 +700,97 @@
                     </connections>
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="UGX-Xt-f14" customClass="AppDelegate">
+                    <connections>
+                        <outlet property="window" destination="IQv-IB-iLA" id="Tmm-qx-2CD"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--View Controller-->
+        <!--Delegate-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="20C-f7-SNl" customClass="DragTargetView">
+                                <rect key="frame" x="20" y="85" width="165" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="165" id="IJW-2P-6Z4"/>
+                                    <constraint firstAttribute="height" constant="165" id="Wlj-Xo-ydG"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="XfG-lQ-9wD" id="GPa-ZJ-gII"/>
+                                </connections>
+                            </customView>
+                            <scrollView borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" hasVerticalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRG-KF-GQe">
+                                <rect key="frame" x="193" y="85" width="117" height="165"/>
+                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="mH4-7h-GSL">
+                                    <rect key="frame" x="0.0" y="0.0" width="117" height="165"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="8sx-h8-7oM">
+                                            <rect key="frame" x="0.0" y="0.0" width="117" height="165"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <size key="minSize" width="117" height="165"/>
+                                            <size key="maxSize" width="225" height="10000000"/>
+                                            <attributedString key="textStorage">
+                                                <fragment content="Verification? No, thanks. I verify my applications myself.">
+                                                    <attributes>
+                                                        <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <font key="NSFont" size="12" name="Courier"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="insertionPointColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="5dy-0E-yB1">
+                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="58T-vQ-5L6">
+                                    <rect key="frame" x="-100" y="-100" width="15" height="165"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="uRi-z3-clC">
+                                <rect key="frame" x="14" y="26" width="292" height="19"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Mac OS Application Verification Skipper" id="o4h-nt-zk0">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2On-uZ-Hld">
+                                <rect key="frame" x="47" y="53" width="226" height="13"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Because not everyone wants to open Terminal" id="zyt-hI-FvL">
+                                    <font key="font" metaFont="system" size="10"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uRi-z3-clC" secondAttribute="bottom" constant="26" id="2r3-EJ-prt"/>
+                            <constraint firstItem="uRi-z3-clC" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="Hoa-X8-9mL"/>
+                            <constraint firstItem="20C-f7-SNl" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="P46-oS-QyT"/>
+                            <constraint firstItem="uRi-z3-clC" firstAttribute="top" secondItem="2On-uZ-Hld" secondAttribute="bottom" constant="8" id="iIM-Kn-k1m"/>
+                            <constraint firstAttribute="trailing" secondItem="oRG-KF-GQe" secondAttribute="trailing" constant="10" id="ihk-BE-Xe7"/>
+                            <constraint firstItem="2On-uZ-Hld" firstAttribute="centerX" secondItem="uRi-z3-clC" secondAttribute="centerX" id="lLx-8g-N0b"/>
+                            <constraint firstItem="20C-f7-SNl" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="v8A-dq-sFf"/>
+                            <constraint firstItem="oRG-KF-GQe" firstAttribute="top" secondItem="20C-f7-SNl" secondAttribute="top" id="w7Y-Ce-a1C"/>
+                            <constraint firstItem="oRG-KF-GQe" firstAttribute="leading" secondItem="20C-f7-SNl" secondAttribute="trailing" constant="8" id="x9T-eH-2jV"/>
+                            <constraint firstItem="oRG-KF-GQe" firstAttribute="height" secondItem="20C-f7-SNl" secondAttribute="height" id="zq2-IZ-5Tq"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
